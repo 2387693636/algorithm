@@ -1,4 +1,4 @@
-package com.study.pattern;
+package com.study.pattern.strategy;
 
 /**
  * @author: zou_xq
