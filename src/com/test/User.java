@@ -2,7 +2,7 @@ package com.test;
 
 /**
  * @author: zou_xq
- * @description:
+ * @description: user
  * @date: 2020/8/19 9:05
  */
 public class User {
