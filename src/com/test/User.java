@@ -8,7 +8,16 @@ package com.test;
 public class User {
     private String username;
     private Integer id;
-    private String password;
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    private String pwd;
     private String phone;
 
     public String getPhone() {
@@ -35,11 +44,5 @@ public class User {
         this.id = id;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
