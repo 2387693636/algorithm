@@ -9,15 +9,16 @@ public class User {
     private String username;
     private Integer id;
 
-    public String getPwd() {
-        return pwd;
+
+    public String getPawd1() {
+        return pawd1;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setPawd1(String pawd1) {
+        this.pawd1 = pawd1;
     }
 
-    private String pwd;
+    private String pawd1;
     private String phone;
 
     public String getPhone() {
