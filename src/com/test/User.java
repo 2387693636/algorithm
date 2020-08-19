@@ -8,18 +8,24 @@ package com.test;
 public class User {
     private String username;
     private Integer id;
-
-
-    public String getPawd1() {
-        return pawd1;
-    }
-
-    public void setPawd1(String pawd1) {
-        this.pawd1 = pawd1;
-    }
-
-    private String pawd1;
+    private String password;
     private String phone;
+    private String gender;
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getPhone() {
         return phone;
