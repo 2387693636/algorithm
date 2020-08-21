@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.Date;
+
 /**
  * @author: zou_xq
  * @description: user
@@ -10,6 +12,16 @@ public class User {
     private Integer id;
     private String password;
     private String phone;
+
+    public Date getCredentialsExpireTime() {
+        return credentialsExpireTime;
+    }
+
+    public void setCredentialsExpireTime(Date credentialsExpireTime) {
+        this.credentialsExpireTime = credentialsExpireTime;
+    }
+
+    private Date credentialsExpireTime;
     public String getPassword() {
         return password;
     }
@@ -42,6 +54,4 @@ public class User {
     public void setId(Integer id) {
         this.id = id;
     }
-
-
 }
