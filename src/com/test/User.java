@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.List;
+
 /**
  * @author: zou_xq
  * @description: user
@@ -11,6 +13,17 @@ public class User {
     private String password;
     private String phone;
     private String gender;
+
+    public List<Long> getRoleIds() {
+        return roleIds;
+    }
+
+    public void setRoleIds(List<Long> roleIds) {
+        this.roleIds = roleIds;
+    }
+
+    private List<Long> roleIds;
+
     public String getGender() {
         return gender;
     }
