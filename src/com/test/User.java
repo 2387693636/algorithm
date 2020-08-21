@@ -14,6 +14,16 @@ public class User {
     private String phone;
     private String gender;
 
+    public List<String> getUserIds() {
+        return userIds;
+    }
+
+    public void setUserIds(List<String> userIds) {
+        this.userIds = userIds;
+    }
+
+    private List<String> userIds;
+
     public List<Long> getRoleIds() {
         return roleIds;
     }
