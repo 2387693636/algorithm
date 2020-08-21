@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.List;
+
 import java.util.Date;
 
 /**
@@ -12,6 +14,25 @@ public class User {
     private Integer id;
     private String password;
     private String phone;
+    private String gender;
+
+    public List<Long> getRoleIds() {
+        return roleIds;
+    }
+
+    public void setRoleIds(List<Long> roleIds) {
+        this.roleIds = roleIds;
+    }
+
+    private List<Long> roleIds;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public Date getCredentialsExpireTime() {
         return credentialsExpireTime;
