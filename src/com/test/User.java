@@ -1,8 +1,7 @@
 package com.test;
 
-import java.util.List;
-
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author: zou_xq
@@ -15,6 +14,16 @@ public class User {
     private String password;
     private String phone;
     private String gender;
+
+    public String getNewPwd() {
+        return newpwds;
+    }
+
+    public void setNewPwd(String newPwd) {
+        this.newpwds = newPwd;
+    }
+
+    private String newpwds;
 
     public List<String> getUserIds() {
         return userIds;
