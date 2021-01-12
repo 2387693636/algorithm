@@ -31,8 +31,8 @@ public class Problem9 {
     public ListNode getList(int[] sums) {
         ListNode dummyHead = new ListNode(0);
         ListNode curr = dummyHead;
-        for (int i = 0; i < sums.length; i++) {
-            curr.next = new ListNode(sums[i]);
+        for (int sum : sums) {
+            curr.next = new ListNode(sum);
             curr = curr.next;
         }
         return dummyHead.next;
@@ -40,7 +40,7 @@ public class Problem9 {
 
     //将链表的值赋给list并打印
     public void showList(ListNode listNode) {
-        List list = new ArrayList();
+        ArrayList list = new ArrayList();
         while (listNode != null) {
             list.add(listNode.val);
             listNode = listNode.next;
@@ -51,11 +51,12 @@ public class Problem9 {
     }
 
     public ListNode addTwoListNodeNum(ListNode l1, ListNode l2) {
-
-        ListNode pre = new ListNode(0); // 预先指针
-        ListNode cur=pre;                 //cur指向预先指针
-
-        int carry=0;             //进位
+        // 预先指针
+        ListNode pre = new ListNode(0);
+        //cur指向预先指针
+        ListNode cur=pre;
+        //进位
+        int carry=0;
 
         //遍历链表
         while (l1 != null || l2 != null) {
@@ -72,15 +73,11 @@ public class Problem9 {
             System.out.println("sum "+sum);
             cur.next = new ListNode(sum);
             cur=cur.next;
-            if (l1 != null) {
-                l1=l1.next;
-            }
-            if (l2 != null) {
-                l2=l2.next;
-            }
+            l1=l1.next;
+            l2=l2.next;
         }
-
-        if (carry > 0 ) { // 进位为1
+        // 进位为1
+        if (carry > 0 ) {
             cur.next = new ListNode(carry);
         }
         return pre.next;
@@ -109,8 +106,12 @@ public class Problem9 {
             carry = sum / 10;
             curr.next = new ListNode(sum % 10);
             curr = curr.next;
-            if (p != null) p = p.next;
-            if (q != null) q = q.next;
+            if (p != null) {
+                p = p.next;
+            }
+            if (q != null) {
+                q = q.next;
+            }
         }
         if (carry > 0) {
             curr.next = new ListNode(carry);
